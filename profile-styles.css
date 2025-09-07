@@ -4,6 +4,9 @@
 body {
     align-items: stretch;
     padding: 0;
+    font-family: var(--font-family) !important;
+    background: var(--bg-dark) !important;
+    color: var(--text-color) !important;
 }
 
 /* ===== PROFILE HEADER ===== */
@@ -116,11 +119,11 @@ body {
     font-size: 48px;
     font-weight: 800;
     margin: 0;
-    color: white;
+    color: white !important;
     text-shadow: 
         0 2px 4px rgba(0, 0, 0, 0.8),
         0 0 20px rgba(255, 20, 147, 0.5);
-    background: linear-gradient(135deg, white 0%, var(--accent-rose) 100%);
+    background: linear-gradient(135deg, white 0%, var(--accent-rose) 100%) !important;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -174,7 +177,7 @@ body {
 .age-value {
     font-size: 28px;
     font-weight: 800;
-    background: linear-gradient(135deg, var(--accent-pink) 0%, var(--accent-purple) 100%);
+    background: linear-gradient(135deg, var(--accent-pink) 0%, var(--accent-purple) 100%) !important;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -184,7 +187,7 @@ body {
 .age-label {
     font-size: 21px;
     font-weight: 500;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.8) !important;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
@@ -201,7 +204,7 @@ body {
     font-weight: 700;
     margin-top: 0;
     margin-bottom: 8px;
-    background: linear-gradient(135deg, var(--accent-pink) 0%, var(--accent-purple) 100%);
+    background: linear-gradient(135deg, var(--accent-pink) 0%, var(--accent-purple) 100%) !important;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -215,7 +218,7 @@ body {
     left: 0;
     width: 60px;
     height: 3px;
-    background: linear-gradient(135deg, var(--accent-pink) 0%, var(--accent-purple) 100%);
+    background: linear-gradient(135deg, var(--accent-pink) 0%, var(--accent-purple) 100%) !important;
     border-radius: 2px;
     box-shadow: 0 0 10px rgba(255, 20, 147, 0.5);
 }
@@ -224,7 +227,7 @@ body {
     font-size: 16px;
     line-height: 1.7;
     margin: 0;
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 0.9) !important;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
     padding: 0 4px;
 }
@@ -233,7 +236,7 @@ body {
     width: 100%;
     height: 64px;
     margin-top: 20px;
-    background: linear-gradient(135deg, var(--accent-pink) 0%, var(--accent-purple) 40%, var(--accent-rose) 100%);
+    background: linear-gradient(135deg, var(--accent-pink) 0%, var(--accent-purple) 40%, var(--accent-rose) 100%) !important;
     border: none;
     border-radius: 16px;
     display: flex;
@@ -295,14 +298,14 @@ body {
 .telegram-button-text {
     font-size: 18px;
     font-weight: 700;
-    color: white;
+    color: white !important;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 /* ===== GALLERY SECTION ===== */
 .gallery-section {
     padding: 28px;
-    background: var(--card-bg);
+    background: var(--card-bg) !important;
     min-height: 50vh;
 }
 
