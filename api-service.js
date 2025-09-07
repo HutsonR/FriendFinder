@@ -4,7 +4,7 @@
 class ApiService {
     constructor() {
         this.baseURL = this.getBaseURL();
-        this.timeout = 0;
+        this.timeout = 100;
         this.retryAttempts = 3;
         this.retryDelay = 1000; // 1 second
     }

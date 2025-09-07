@@ -52,12 +52,10 @@ body {
 }
 
 .profile-title {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 700;
     margin: 0;
-    background: linear-gradient(135deg, var(--accent-pink) 0%, var(--accent-purple) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: white !important;
     background-clip: text;
 }
 
