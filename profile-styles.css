@@ -123,17 +123,14 @@ body {
     text-shadow: 
         0 2px 4px rgba(0, 0, 0, 0.8),
         0 0 20px rgba(255, 20, 147, 0.5);
-    background: linear-gradient(135deg, white 0%, var(--accent-rose) 100%) !important;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     background-clip: text;
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.8));
 }
 
 /* ===== UNIFIED INFO SECTION ===== */
 .info-section {
-    background: var(--card-bg);
-    border-bottom: 1px solid rgba(255, 20, 147, 0.1);
+    background: var(--card-bg) !important;
+    border-bottom: 1px solid rgba(255, 20, 147, 0.1) !important;
     position: relative;
     overflow: hidden;
 }
@@ -177,9 +174,7 @@ body {
 .age-value {
     font-size: 28px;
     font-weight: 800;
-    background: linear-gradient(135deg, var(--accent-pink) 0%, var(--accent-purple) 100%) !important;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: white !important;
     background-clip: text;
     filter: drop-shadow(0 0 15px rgba(255, 20, 147, 0.5));
 }
@@ -204,23 +199,9 @@ body {
     font-weight: 700;
     margin-top: 0;
     margin-bottom: 8px;
-    background: linear-gradient(135deg, var(--accent-pink) 0%, var(--accent-purple) 100%) !important;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: white !important;
     background-clip: text;
     position: relative;
-}
-
-.section-title::after {
-    content: '';
-    position: absolute;
-    bottom: -8px;
-    left: 0;
-    width: 60px;
-    height: 3px;
-    background: linear-gradient(135deg, var(--accent-pink) 0%, var(--accent-purple) 100%) !important;
-    border-radius: 2px;
-    box-shadow: 0 0 10px rgba(255, 20, 147, 0.5);
 }
 
 .description-text {
