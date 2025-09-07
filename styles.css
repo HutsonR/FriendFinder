@@ -47,6 +47,8 @@ html, body {
     display: flex;
     flex-direction: column;
     background-color: var(--bg-dark) !important;
+    padding-bottom: 20px; /* чтобы кнопки не прилипали к низу */
+    transition: padding-top 0.3s;
 }
 
 /* Сбрасываем стили для кнопок Telegram внутри WebApp (если есть) */

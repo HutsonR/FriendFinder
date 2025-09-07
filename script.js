@@ -6,8 +6,32 @@ let hasMoreProfiles = true;
 
 // ===== GALLERY STATE ===== 
 const animatingCards = new Set(); // Track which cards are currently animating
-const ANIMATION_DURATION = 500;
+const ANIMATION_DURATION = 200;
 const MAX_IMAGES_PER_CARD = 10; // Maximum allowed images per card
+
+// Инициализация Telegram Web App
+const tg = window.Telegram?.WebApp;
+
+if (tg) {
+    // Разрешаем fullscreen
+    tg.expand();
+    
+    // Устанавливаем отступ сверху под безопасную зону
+    const safeTop = tg.viewportStableInsetTop || 0;
+    const appRoot = document.getElementById('app-root');
+    if (appRoot) {
+        appRoot.style.paddingTop = `${safeTop}px`;
+    }
+    
+    // Опционально подстраиваем высоту контента под viewport
+    const setAppHeight = () => {
+        appRoot.style.height = `${tg.viewportHeight}px`;
+    };
+    
+    setAppHeight();
+    tg.onEvent('resize', setAppHeight);
+}
+
 
 // ===== UI STATE MANAGEMENT =====
 
@@ -285,7 +309,7 @@ function showTemporaryNotification(message, type = 'info') {
     setTimeout(() => {
         notification.classList.remove('visible');
         setTimeout(() => notification.remove(), 300);
-    }, 3000);
+    }, 100);
 }
 
 // ===== CARD IDENTIFICATION HELPER =====
