@@ -15,9 +15,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 20px 24px;
-    background: rgba(31, 18, 38, 0.95);
-    backdrop-filter: blur(20px);
-    border-bottom: 1px solid rgba(255, 20, 147, 0.2);
+    backdrop-filter: blur(40px);
     position: sticky;
     margin-bottom: 0;
     top: 0;
@@ -390,7 +388,6 @@ body {
 /* ===== RESPONSIVE DESIGN ===== */
 @media (prefers-color-scheme: light) {
     .profile-header {
-        background: rgba(255, 255, 255, 0.95);
         border-bottom: 1px solid rgba(255, 20, 147, 0.3);
     }
     
