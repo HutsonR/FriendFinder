@@ -7,47 +7,49 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="app-header">
-        <h1 class="app-title">✨ Friend Finder ✨</h1>
-        <p class="app-subtitle">Click someone cute. See where it goes 💌</p>
-    </header>
-    
-    <main id="app-root" class="gallery-container">
-        <!-- Loading state -->
-        <div id="mainLoadingState" class="main-loading hidden">
-            <div class="loading-spinner"></div>
-            <p class="loading-text">Finding amazing people for you...</p>
-        </div>
+    <div id="app-root">
+        <header class="app-header">
+            <h1 class="app-title">✨ Friend Finder ✨</h1>
+            <p class="app-subtitle">Click someone cute. See where it goes 💌</p>
+        </header>
         
-        <!-- Error state -->
-        <div id="mainErrorState" class="main-error hidden">
-            <div class="error-icon">💔</div>
-            <h3 class="error-title">Oops! Something went wrong</h3>
-            <p class="error-message">We couldn't load profiles right now.</p>
-            <button class="retry-button" onclick="retryLoadProfiles()">Try Again</button>
-        </div>
-        
-        <!-- Empty state -->
-        <div id="mainEmptyState" class="main-empty hidden">
-            <div class="empty-icon">🔍</div>
-            <h3 class="empty-title">No profiles found</h3>
-            <p class="empty-message">Check back later for new people to meet!</p>
-            <button class="refresh-button" onclick="refreshProfiles()">Refresh</button>
-        </div>
-        
-        <!-- Dynamic content container -->
-        <div id="profilesContainer" class="profiles-container">
-            <!-- Photo cards will be dynamically inserted here -->
-        </div>
-        
-        <!-- Load more button -->
-        <div id="loadMoreContainer" class="load-more-container hidden">
-            <button id="loadMoreButton" class="load-more-button" onclick="loadMoreProfiles()">
-                <span class="load-more-text">Show more people</span>
-                <div class="load-more-spinner hidden"></div>
-            </button>
-        </div>
-    </main>
+        <main class="gallery-container">
+            <!-- Loading state -->
+            <div id="mainLoadingState" class="main-loading hidden">
+                <div class="loading-spinner"></div>
+                <p class="loading-text">Finding amazing people for you...</p>
+            </div>
+            
+            <!-- Error state -->
+            <div id="mainErrorState" class="main-error hidden">
+                <div class="error-icon">💔</div>
+                <h3 class="error-title">Oops! Something went wrong</h3>
+                <p class="error-message">We couldn't load profiles right now.</p>
+                <button class="retry-button" onclick="retryLoadProfiles()">Try Again</button>
+            </div>
+            
+            <!-- Empty state -->
+            <div id="mainEmptyState" class="main-empty hidden">
+                <div class="empty-icon">🔍</div>
+                <h3 class="empty-title">No profiles found</h3>
+                <p class="empty-message">Check back later for new people to meet!</p>
+                <button class="refresh-button" onclick="refreshProfiles()">Refresh</button>
+            </div>
+            
+            <!-- Dynamic content container -->
+            <div id="profilesContainer" class="profiles-container">
+                <!-- Photo cards will be dynamically inserted here -->
+            </div>
+            
+            <!-- Load more button -->
+            <div id="loadMoreContainer" class="load-more-container hidden">
+                <button id="loadMoreButton" class="load-more-button" onclick="loadMoreProfiles()">
+                    <span class="load-more-text">Show more people</span>
+                    <div class="load-more-spinner hidden"></div>
+                </button>
+            </div>
+        </main>
+    </div>
 
     <script src="api-service.js"></script>
     <script src="script.js"></script>

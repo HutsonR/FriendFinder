@@ -47,6 +47,7 @@ html, body {
     display: flex;
     flex-direction: column;
     background-color: var(--bg-dark) !important;
+    padding-top: 80px;
     padding-bottom: 20px; /* чтобы кнопки не прилипали к низу */
     transition: padding-top 0.3s;
 }
