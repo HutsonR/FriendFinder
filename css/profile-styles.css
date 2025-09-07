@@ -221,7 +221,7 @@ body {
     justify-content: center;
     gap: 12px;
     cursor: pointer;
-    transition: all 0.4s var(--transition-easing);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 
         0 12px 30px rgba(255, 20, 147, 0.4),
         0 6px 20px rgba(139, 92, 246, 0.3),
@@ -250,12 +250,7 @@ body {
 }
 
 .telegram-flirt-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 
-        0 16px 40px rgba(255, 20, 147, 0.5),
-        0 8px 25px rgba(139, 92, 246, 0.4),
-        0 0 30px rgba(255, 105, 180, 0.3),
-        inset 0 2px 0 rgba(255, 255, 255, 0.4);
+    transform: scale(1.05);
 }
 
 .telegram-flirt-button:active {
@@ -605,10 +600,6 @@ body {
 
 .telegram-flirt-button {
     animation: fadeInUp 0.6s ease-out 0.5s both;
-}
-
-.telegram-flirt-button:hover {
-    animation: pulse 0.6s ease-in-out;
 }
 
 .gallery-section {
