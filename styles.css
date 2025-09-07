@@ -49,7 +49,6 @@ html, body {
     justify-content: center;
     background-color: var(--bg-dark) !important;
     padding-top: 90px;
-    padding-bottom: 20px; /* чтобы кнопки не прилипали к низу */
     transition: padding-top 0.3s;
 }
 
@@ -104,25 +103,25 @@ body::before {
     background-clip: text;
     color: white !important;
     text-shadow: 0 0 30px rgba(255, 20, 147, 0.5);
-    filter: drop-shadow(0 0 10px rgba(255, 20, 147, 0.3));
+    filter: drop-shadow(0 0 10px rgba(255, 20, 147, 0.2));
     animation: titleGlow 3s ease-in-out infinite alternate;
 }
 
 @keyframes titleGlow {
     from {
-        filter: drop-shadow(0 0 10px rgba(255, 20, 147, 0.3));
+        filter: drop-shadow(0 0 10px rgba(255, 20, 147, 0.2));
     }
     to {
-        filter: drop-shadow(0 0 20px rgba(255, 20, 147, 0.6)) drop-shadow(0 0 30px rgba(139, 92, 246, 0.3));
+        filter: drop-shadow(0 0 20px rgba(255, 20, 147, 0.4)) drop-shadow(0 0 30px rgba(139, 92, 246, 0.3));
     }
 }
 
 .app-subtitle {
-    font-size: 18px;
+    font-size: 16px;
     margin: 0;
     background-clip: text;
     font-weight: 500;
-    color: white !important;
+    color: rgba(255, 255, 255, 0.7) !important;
     line-height: 1.4;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
@@ -135,6 +134,7 @@ body::before {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding-bottom: 20px; /* чтобы кнопки не прилипали к низу */
 }
 
 /* ===== PHOTO CARD COMPONENT ===== */
